@@ -1,0 +1,60 @@
+Project: Architect Auth Module
+URL: https://architect-testing.projectsmate.com/login
+Date: 19 FEB 2026
+
+Scope of Testing
+This document covers manual testing of the Login module including:
+
+1. Functional testing
+
+TC_001 – Verify Login Page Loads Successfully       
+Test ID : TC_001
+Objective : Verify login page loads correctly
+Steps : Open login URL
+Expected Result : Login page loads without errors
+
+TC_002 – Login with Valid Credentials
+Test ID : TC_002
+Objective : Verify successful login
+Steps : Enter valid email and password → Click Login
+Expected Result : User is logged in successfully
+
+TC_003 – Verify Google Sign-in Button
+Test ID : TC_003
+Objective : Verify Google authentication
+Steps : Click "Sign in with Google"
+Expected Result : Redirect to Google authentication page
+
+2. Negative testing
+
+TC_004 – Login with Invalid Password
+Test ID : TC_004
+Objective : Verify error message for wrong password
+Steps : Enter valid email + invalid password → Click Login
+Expected Result : Proper error message displayed
+
+TC_005 – Login with Invalid Email Format
+Test ID : TC_005
+Objective : Validate email format
+Steps : Enter invalid email (abc@) → Click Login
+Expected Result : Email validation error shown
+
+TC_006 – Empty Email Field
+Test ID : TC_006
+Objective : Verify required field validation
+Steps : Leave email empty → Click Login
+Expected Result : Required field message displayed
+
+TC_007 – Both Fields Empty
+Test ID : TC_007
+Objective : Verify form submission blocked
+Steps : Leave both fields empty → Click Login
+Expected Result : Validation messages shown
+
+3. Observations
+No visible Sign Up option found on login page.
+Login page contains Google sign-in option.
+Form validation behavior observed during testing.
+
+
+  
